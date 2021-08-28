@@ -1,0 +1,15 @@
+'use strict';
+
+/**
+ * All snowflakes with knowed applications.
+ * 
+ * @typedef APPLICATIONS
+ */
+module.exports.APPLICATIONS = {
+    YOUTUBE: '755600276941176913',
+    POKER: '755827207812677713',
+    BETRAYAL: '773336526917861400',
+    FISHING: '814288819477020702',
+    CHESS_DEV: '832012586023256104',
+    CHESS: '832012774040141894'
+}

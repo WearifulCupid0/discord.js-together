@@ -1,0 +1,19 @@
+{
+  "name": "discord.js-together",
+  "version": "1.0.0",
+  "description": "A simple package for creating activities invites.",
+  "main": "index.js",
+  "author": "wearifulcupid0",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "exports": {
+    "./*": "./*",
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  },
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  }
+}
