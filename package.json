@@ -6,6 +6,9 @@
   "author": "wearifulcupid0",
   "license": "MIT",
   "types": "./index.d.ts",
+  "repository": {
+    "url": "https://github.com/WearifulCupid0/discord.js-together"
+  },
   "exports": {
     "./*": "./*",
     ".": {
