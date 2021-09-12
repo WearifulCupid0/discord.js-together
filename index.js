@@ -6,7 +6,7 @@ const { VoiceChannel, Invite } = require('discord.js');
 Object.assign(VoiceChannel.prototype, {
     /**
      * Create an youtube together invite to this voice channel.
-     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @param {DevelopmentInviteOptions} [options={}] The options for creating the invite.
      * @returns {Promise<Invite>}
      * @readonly
      * @example
@@ -16,7 +16,8 @@ Object.assign(VoiceChannel.prototype, {
      *   .catch(console.error);
      */
     createYoutubeTogetherInvite(options = {}) {
-        return this.createInvite({ ...options, targetApplication: APPLICATIONS.YOUTUBE, targetType: 2 });
+        const dev = !!(options && options.dev);
+        return this.createInvite({ ...options, targetApplication: dev ? APPLICATIONS.YOUTUBE_DEV : APPLICATIONS.YOUTUBE, targetType: 2 });
     },
 
     /**
@@ -66,7 +67,7 @@ Object.assign(VoiceChannel.prototype, {
 
     /**
      * Create an chess invite to this voice channel.
-     * @param {ChessInviteOptions} [options={}] The options for creating the invite.
+     * @param {DevelopmentInviteOptions} [options={}] The options for creating the invite.
      * @returns {Promise<Invite>}
      * @readonly
      * @example

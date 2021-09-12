@@ -52,8 +52,8 @@ client.login('Your Discord Bot token here.');
 /**
  * Create a youtube together invite.
  * 
- * @param {Object} options - Default invite options,
- * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ * @param {Object} options - You can pass parameter "dev" for creating a development youtube together,
+ * all the other options you can find [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createYoutubeTogetherInvite(options)
 
@@ -84,8 +84,7 @@ VoiceChannel.createFishingInvite(options)
 /**
  * Create a chess invite.
  * 
- * @param {Object} options - Thats the only one has a little difference,
- * you can pass parameter "dev" for creating a development chess,
+ * @param {Object} options - You can pass parameter "dev" for creating a development chess,
  * all the other options you can find [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createChessInvite(options)
