@@ -1,7 +1,7 @@
 <p align="center">
 <h1><strong>Discord.js Together</strong></h1>
 
-[![NPM](https://nodei.co/npm/discord.js-together.png)](https://nodei.co/npm/discord-together/)
+[![NPM](https://nodei.co/npm/discord.js-together.png)](https://nodei.co/npm/discord.js-together)
 
 A simple package for [Discord.JS](https://www.npmjs.com/package/discord.js) for creating activities invites.
 
@@ -52,35 +52,40 @@ client.login('Your Discord Bot token here.');
 /**
  * Create a youtube together invite.
  * 
- * @param {Object} options - Default invite options, you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createYoutubeTogetherInvite(options)
 
 /**
  * Create a poker invite.
  * 
- * @param {Object} options - Default invite options, you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createPokerInvite(options)
 
 /**
  * Create a betrayal invite.
  * 
- * @param {Object} options - Default invite options, you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createBetrayalInvite(options)
 
 /**
  * Create a fishing invite.
  * 
- * @param {Object} options - Default invite options, you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createFishingInvite(options)
 
 /**
  * Create a chess invite.
  * 
- * @param {Object} options - Thats the only one has a little difference, you can pass parameter "dev" for creating a development chess,
+ * @param {Object} options - Thats the only one has a little difference,
+ * you can pass parameter "dev" for creating a development chess,
  * all the other options you can find [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createChessInvite(options)
