@@ -88,4 +88,28 @@ VoiceChannel.createFishingInvite(options)
  * all the other options you can find [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createChessInvite(options)
+
+/**
+ * Create a letter tile invite.
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createLetterTileInvite(options)
+
+/**
+ * Create a word snack invite.
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createWordSnackInvite(options)
+
+/**
+ * Create a doodle crew invite.
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createDoodleCrewInvite(options)
 ```
