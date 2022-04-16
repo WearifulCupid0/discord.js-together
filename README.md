@@ -158,7 +158,7 @@ VoiceChannel.createPuttPartyInvite(options)
 VoiceChannel.createSketchHeadsInvite(options)
 
 /**
- * Create a ocho invite.
+ * Create an ocho invite.
  * 
  * @param {Object} options - Default invite options,
  * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
