@@ -83,6 +83,7 @@ VoiceChannel.createFishingInvite(options)
 
 /**
  * Create a chess invite.
+ * REQUIRES A SERVER BOOST TIER 1 OR UPPER TO CREATE
  * 
  * @param {Object} options - You can pass parameter "dev" for creating a development chess,
  * all the other options you can find [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
@@ -112,4 +113,55 @@ VoiceChannel.createWordSnackInvite(options)
  * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
  */
 VoiceChannel.createDoodleCrewInvite(options)
+
+/**
+ * Create an awkword invite.
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createAwkwordInvite(options)
+
+/**
+ * Create a spell cast invite.
+ * REQUIRES A SERVER BOOST TIER 1 OR UPPER TO CREATE
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createSpellCastInvite(options)
+
+/**
+ * Create a checkers invite.
+ * REQUIRES A SERVER BOOST TIER 1 OR UPPER TO CREATE
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createCheckersInvite(options)
+
+/**
+ * Create a putt party invite.
+ * REQUIRES A SERVER BOOST TIER 1 OR UPPER TO CREATE
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createPuttPartyInvite(options)
+
+/**
+ * Create a sketch heads invite.
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createSketchHeadsInvite(options)
+
+/**
+ * Create a spell cast invite.
+ * 
+ * @param {Object} options - Default invite options,
+ * you can find then [here](https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions)
+ */
+VoiceChannel.createOchoInvite(options)
 ```
