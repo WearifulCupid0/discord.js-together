@@ -36,6 +36,7 @@ Object.assign(VoiceChannel.prototype, {
      *   .catch(console.error);
      */
     createPokerInvite(options = {}) {
+        if (this.guild?.premiumTier === 'NONE') return Promise.reject('VoiceChannel#createPokerInvite only tier 1 or upper boosted servers can start this activity.');
         return this.createInvite({
             ...options,
             targetApplication: APPLICATIONS.POKER,
@@ -94,6 +95,7 @@ Object.assign(VoiceChannel.prototype, {
      *   .catch(console.error);
      */
     createChessInvite(options = {}) {
+        if (this.guild?.premiumTier === 'NONE') return Promise.reject('VoiceChannel#createChessInvite only tier 1 or upper boosted servers can start this activity.');
         const dev = !!(options && options.dev);
         return this.createInvite({
             ...options,
@@ -155,6 +157,123 @@ Object.assign(VoiceChannel.prototype, {
         return this.createInvite({
             ...options,
             targetApplication: APPLICATIONS.DOODLE_CREW,
+            targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
+        });
+    },
+
+    /**
+     * Create an awkword invite to the voice channel.
+     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @returns {Promise<Invite>}
+     * @readonly
+     * @example
+     * // Create an doodle crew invite to the voice channel
+     * channel.createAwkwordInvite()
+     *   .then(console.log)
+     *   .catch(console.error);
+     */
+    createAwkwordInvite(options = {}) {
+        return this.createInvite({
+            ...options,
+            targetApplication: APPLICATIONS.AWKWORD,
+            targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
+        })
+    },
+
+    /**
+     * Create an spell cast invite to the voice channel.
+     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @returns {Promise<Invite>}
+     * @readonly
+     * @example
+     * // Create an doodle crew invite to the voice channel
+     * channel.createSpellCastInvite()
+     *   .then(console.log)
+     *   .catch(console.error);
+     */
+    createSpellCastInvite(options = {}) {
+        if (this.guild?.premiumTier === 'NONE') return Promise.reject('VoiceChannel#createSpellCast only tier 1 or upper boosted servers can start this activity.');
+        return this.createInvite({
+            ...options,
+            targetApplication: APPLICATIONS.SPELL_CAST,
+            targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
+        });
+    },
+
+    /**
+     * Create an checkers invite to the voice channel.
+     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @returns {Promise<Invite>}
+     * @readonly
+     * @example
+     * // Create an doodle crew invite to the voice channel
+     * channel.createCheckersInvite()
+     *   .then(console.log)
+     *   .catch(console.error);
+     */
+    createCheckersInvite(options = {}) {
+        if (this.guild?.premiumTier === 'NONE') return Promise.reject('VoiceChannel#createCheckers only tier 1 or upper boosted servers can start this activity.');
+        return this.createInvite({
+            ...options,
+            targetApplication: APPLICATIONS.CHECKERS,
+            targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
+        });
+    },
+
+    /**
+     * Create an putt party invite to the voice channel.
+     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @returns {Promise<Invite>}
+     * @readonly
+     * @example
+     * // Create an doodle crew invite to the voice channel
+     * channel.createPuttPartyInvite()
+     *   .then(console.log)
+     *   .catch(console.error);
+     */
+    createPuttPartyInvite(options = {}) {
+        if (this.guild?.premiumTier === 'NONE') return Promise.reject('VoiceChannel#createPuttParty only tier 1 or upper boosted servers can start this activity.');
+        return this.createInvite({
+            ...options,
+            targetApplication: APPLICATIONS.PUTT_PARTY,
+            targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
+        });
+    },
+
+    /**
+     * Create an sketch heads invite to the voice channel.
+     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @returns {Promise<Invite>}
+     * @readonly
+     * @example
+     * // Create an doodle crew invite to the voice channel
+     * channel.createSketchHeadsInvite()
+     *   .then(console.log)
+     *   .catch(console.error);
+     */
+    createSketchHeadsInvite(options = {}) {
+        return this.createInvite({
+            ...options,
+            targetApplication: APPLICATIONS.SKETCH_HEADS,
+            targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
+        });
+    },
+
+    /**
+     * Create an ocho invite to the voice channel.
+     * @param {CreateInviteOptions} [options={}] The options for creating the invite.
+     * @returns {Promise<Invite>}
+     * @readonly
+     * @example
+     * // Create an doodle crew invite to the voice channel
+     * channel.createOchoInvite()
+     *   .then(console.log)
+     *   .catch(console.error);
+     */
+    createOchoInvite(options = {}) {
+        return this.createInvite({
+            ...options,
+            targetApplication: APPLICATIONS.OCHO,
             targetType: INVITE_TARGET_TYPES.EMBEDDED_APPLICATION
         });
     }
